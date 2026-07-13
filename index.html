@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>rainy-window-editor</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- p5.js 1.10.x CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.min.js"></script>
+</head>
+<body>
+  <!-- 上传按钮 -->
+  <input type="file" id="uploadInput" accept="image/*,video/*" hidden>
+
+  <!-- 可拖拽文字层（叠加在 Canvas 之上） -->
+  <div id="textOverlay"></div>
+
+  <!-- 右侧控制面板 -->
+  <div id="controlPanel"></div>
+
+  <!-- 操作提示 -->
+  <div id="hintBar"></div>
+
+  <script src="js/main.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/shader.js"></script>
+  <script src="js/fog.js"></script>
+  <script src="js/raindrops.js"></script>
+  <script src="js/textOverlay.js"></script>
+  <script src="js/controlPanel.js"></script>
+  <script src="js/sketch.js"></script>
+</body>
+</html>
